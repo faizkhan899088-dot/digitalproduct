@@ -226,7 +226,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 40px;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
         .testimonial {
@@ -235,9 +235,31 @@
             border-radius: 20px;
             backdrop-filter: blur(12px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .testimonial-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 5px solid #25D366;
+        }
+        .testimonial-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .testimonial p:first-of-type {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1em;
         }
         .testimonial p:last-child {
-            margin-top: 20px;
+            margin-top: auto;
             font-weight: bold;
             color: #25D366;
             font-size: 1.2em;
@@ -318,6 +340,10 @@
             .portfolio-subtitle {
                 font-size: 1.6em;
             }
+            .testimonial-img {
+                width: 100px;
+                height: 100px;
+            }
         }
     </style>
 </head>
@@ -357,7 +383,6 @@
                 <p>Proven CTAs, WhatsApp chat, email opt-ins & high-converting layouts that turn visitors into buyers.</p>
             </div>
         </div>
-
         <!-- Special Offer: 1 Year Free Domain + Hosting -->
         <div class="special-offer">
             <i class="fas fa-gift"></i>
@@ -366,7 +391,6 @@
                 <p><strong>1 Year FREE Domain + Hosting</strong><br>With Every Premium Website Package</p>
             </div>
         </div>
-
         <!-- Portfolio Gallery -->
         <p class="portfolio-subtitle">See Real High-Converting Websites We've Built for Digital Creators</p>
         <div class="portfolio-grid">
@@ -389,7 +413,6 @@
                 <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/paul_zizka_screenshot.png?v=1760474198" alt="Real Creator Sales Page Example">
             </div>
         </div>
-
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20loved%20your%20portfolio%20and%20the%20free%20hosting%20offer.%20Let's%20build%20my%20website!" class="cta-btn" style="margin-top: 60px; display: inline-block;">Yes, I Want My Website Now!</a>
     </section>
     <!-- Testimonials Section -->
@@ -397,12 +420,88 @@
         <h2>What Clients Are Saying</h2>
         <div class="testimonial-grid">
             <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://as2.ftcdn.net/jpg/05/33/76/59/1000_F_533765939_Mo2vFoFWkbSQdfddZMYsaiZs2rue30EJ.jpg" alt="Amit Kumar">
+                </div>
                 <p>"Amazing design! My course sales doubled after launching the new site. The WhatsApp integration is a game-changer."</p>
                 <p>- Amit Kumar, Online Coach</p>
             </div>
             <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://as2.ftcdn.net/jpg/05/73/43/47/1000_F_573434786_u5oTtQo07UomjUEkpx8OP57jwDW8nZDL.jpg" alt="Sneha Gupta">
+                </div>
                 <p>"Professional, fast, and super responsive team. Best investment for my e-book business!"</p>
                 <p>- Sneha Gupta, Author & Creator</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://as2.ftcdn.net/jpg/04/22/82/39/1000_F_422823992_ZtyrE96o6wGTJcyZolZ6pLRUGHBRCH9c.jpg" alt="Rajesh Patel">
+                </div>
+                <p>"The new website looks stunning and loads super fast. Leads have increased by 150% since launch!"</p>
+                <p>- Rajesh Patel, Digital Marketer</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1987655119/photo/smiling-young-businesswoman-standing-in-the-corridor-of-an-office.jpg?s=612x612&w=0&k=20&c=5N_IVGYsXoyj-H9vEiZUCLqbmmineaemQsKt2NTXGms=" alt="Priya Sharma">
+                </div>
+                <p>"Incredible value with the free hosting offer. My online course page converts like crazy now."</p>
+                <p>- Priya Sharma, Course Creator</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://as1.ftcdn.net/jpg/05/28/11/50/1000_F_528115050_hZkEcSSY0nvzTQNcNuKat3GZAdQrL7ed.jpg" alt="Vikram Singh">
+                </div>
+                <p>"Custom design exceeded expectations. Mobile version is perfect, and sales are booming!"</p>
+                <p>- Vikram Singh, Software Seller</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1354842602/photo/portrait-of-a-young-businesswoman-working-on-a-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=kfP1g2712RiaxsDriIxFo363ARlaL2D591s-22CnIo8=" alt="Ananya Mehta">
+                </div>
+                <p>"The team delivered ahead of schedule. My e-book sales page is beautiful and highly effective."</p>
+                <p>- Ananya Mehta, E-book Author</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://www.shutterstock.com/image-photo/happy-young-indian-business-man-260nw-2206163773.jpg" alt="Arjun Reddy">
+                </div>
+                <p>"SEO optimization worked wonders. Traffic and conversions are through the roof!"</p>
+                <p>- Arjun Reddy, Online Entrepreneur</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1336009321/photo/portrait-of-a-mature-businesswoman-having-a-meeting-with-her-team-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=OPxxvD3kzlQbUXI1cjrEvr_ZNtAl_xhcFGOl7DfjatE=" alt="Neha Kapoor">
+                </div>
+                <p>"WhatsApp CTA is brilliant! Direct inquiries from the site have skyrocketed."</p>
+                <p>- Neha Kapoor, Digital Product Creator</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://thumbs.dreamstime.com/b/head-shot-portrait-handsome-smiling-young-male-looking-camera-shiny-smile-head-shot-photography-portrait-handsome-smiling-young-357008454.jpg" alt="Suresh Nair">
+                </div>
+                <p>"Best decision for my digital product launch. Professional and conversion-focused design."</p>
+                <p>- Suresh Nair, Coach & Trainer</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1145045107/photo/portrait-of-a-beautiful-mature-indian-woman.jpg?s=612x612&w=0&k=20&c=ezBRqDoUXJmSx2uoVUm0kw6Dj0N4CxtS49CoGs2TeKw=" alt="Kavya Rao">
+                </div>
+                <p>"Fantastic support and stunning results. Highly recommend for any digital creator!"</p>
+                <p>- Kavya Rao, Author</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://img.freepik.com/premium-photo/young-indian-woman-happy-restaurant_81396-153.jpg" alt="Rohan Gupta">
+                </div>
+                <p>"My software sales page now looks premium and trustworthy. Sales up 200%!"</p>
+                <p>- Rohan Gupta, Developer</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="https://www.shutterstock.com/image-photo/business-portrait-young-indian-asian-260nw-1132534886.jpg" alt="Divya Joshi">
+                </div>
+                <p>"Love the responsive design and fast loading. Perfect for mobile users!"</p>
+                <p>- Divya Joshi, Online Educator</p>
             </div>
         </div>
     </section>
