@@ -22,7 +22,48 @@
             background-color: #f9f9f9;
         }
 
-        /* Hero Section - More Premium Look */
+        /* Fixed Top Bar for Call & WhatsApp */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .top-bar a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
+        }
+        .top-bar i {
+            font-size: 1.4em;
+        }
+        .call-btn {
+            background: #e74c3c;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        /* Hero Section - Adjusted for Top Bar */
         header {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/luxury-background-blue-green-modern-design-abstract-gradients-style_343694-2483.jpg') no-repeat center center/cover;
             height: 100vh;
@@ -33,6 +74,7 @@
             justify-content: center;
             align-items: center;
             padding: 0 20px;
+            margin-top: 70px; /* Space for fixed top bar */
         }
         header h1 {
             font-size: 5em;
@@ -87,7 +129,7 @@
             border-radius: 3px;
         }
 
-        /* Features - Grid Layout */
+        /* Features */
         #features {
             background-color: #fff;
         }
@@ -204,6 +246,17 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .top-bar {
+                padding: 10px;
+                gap: 10px;
+            }
+            .top-bar a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+            header {
+                margin-top: 60px;
+            }
             header h1 {
                 font-size: 3.5em;
             }
@@ -221,6 +274,16 @@
     </style>
 </head>
 <body>
+
+    <!-- Fixed Top Bar with Call & WhatsApp -->
+    <div class="top-bar">
+        <a href="tel:+911234567890" class="call-btn">
+            <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="https://wa.me/1234567890?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
 
     <!-- Hero Section -->
     <header>
