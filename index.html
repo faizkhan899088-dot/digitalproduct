@@ -21,7 +21,6 @@
             color: #333;
             background-color: #f9f9f9;
         }
-
         /* Fixed Top Bar for Call & WhatsApp */
         .top-bar {
             position: fixed;
@@ -62,8 +61,7 @@
         .whatsapp-btn {
             background: #25D366;
         }
-
-        /* Hero Section - Adjusted for Top Bar */
+        /* Hero Section */
         header {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/luxury-background-blue-green-modern-design-abstract-gradients-style_343694-2483.jpg') no-repeat center center/cover;
             height: 100vh;
@@ -74,7 +72,7 @@
             justify-content: center;
             align-items: center;
             padding: 0 20px;
-            margin-top: 70px; /* Space for fixed top bar */
+            margin-top: 70px;
         }
         header h1 {
             font-size: 5em;
@@ -106,7 +104,6 @@
             transform: scale(1.15);
             box-shadow: 0 25px 50px rgba(37, 211, 102, 0.6);
         }
-
         /* Sections */
         section {
             padding: 100px 20px;
@@ -128,8 +125,7 @@
             margin: 20px auto;
             border-radius: 3px;
         }
-
-        /* Features */
+        /* Features / Strengths Section - Enhanced */
         #features {
             background-color: #fff;
         }
@@ -138,7 +134,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 80px auto;
         }
         .feature {
             background: white;
@@ -161,7 +157,34 @@
             margin-bottom: 20px;
             font-weight: 600;
         }
-
+        /* Portfolio Gallery */
+        .portfolio-subtitle {
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #444;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .portfolio-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            transition: all 0.4s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
         /* Testimonials */
         #testimonials {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -193,7 +216,6 @@
             color: #25D366;
             font-size: 1.2em;
         }
-
         /* Lead Form */
         #leads {
             background-color: #f0f8ff;
@@ -235,7 +257,6 @@
         button:hover {
             transform: scale(1.08);
         }
-
         /* Footer */
         footer {
             background: #111;
@@ -243,7 +264,6 @@
             padding: 50px;
             font-size: 1.3em;
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .top-bar {
@@ -270,50 +290,74 @@
             h2 {
                 font-size: 2.8em;
             }
+            .portfolio-subtitle {
+                font-size: 1.6em;
+            }
         }
     </style>
 </head>
 <body>
-
     <!-- Fixed Top Bar with Call & WhatsApp -->
     <div class="top-bar">
-        <a href="tel:+911234567890" class="call-btn">
+        <a href="tel:+918979401469" class="call-btn">
             <i class="fas fa-phone"></i> Call Now
         </a>
         <a href="https://wa.me/1234567890?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
     </div>
-
     <!-- Hero Section -->
     <header>
         <h1>Premium Digital Product Website Design</h1>
         <p>High-converting, beautiful websites for your online courses, e-books, software & digital products. Get more leads & sales!</p>
         <a href="https://wa.me/1234567890?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="cta-btn">Start Chat on WhatsApp</a>
     </header>
-
-    <!-- Features Section -->
+    <!-- Strengths / Features Section - Enhanced with Portfolio -->
     <section id="features">
-        <h2>Our Key Strengths</h2>
+        <h2>Why Clients Trust Us for Their Digital Product Websites</h2>
         <div class="feature-grid">
             <div class="feature">
                 <i class="fas fa-paint-brush"></i>
                 <h3>Custom & Unique Designs</h3>
-                <p>Every website is crafted from scratch to perfectly showcase your digital product and brand.</p>
+                <p>Every website is crafted from scratch to perfectly showcase your digital product and brand – no templates, pure originality.</p>
             </div>
             <div class="feature">
                 <i class="fas fa-mobile-alt"></i>
-                <h3>Fully Responsive</h3>
-                <p>Looks amazing and works perfectly on mobile, tablet, and desktop devices.</p>
+                <h3>Fully Responsive & Fast</h3>
+                <p>Looks stunning and loads lightning-fast on mobile, tablet, and desktop – optimized for maximum conversions.</p>
             </div>
             <div class="feature">
                 <i class="fas fa-magnet"></i>
                 <h3>Lead Generation Focused</h3>
-                <p>Strategic placement of CTAs, forms, and WhatsApp buttons to capture maximum leads.</p>
+                <p>Strategic CTAs, WhatsApp integration, opt-in forms & proven layouts that turn visitors into buyers.</p>
             </div>
         </div>
-    </section>
 
+        <!-- Portfolio Gallery -->
+        <p class="portfolio-subtitle">See Our Recent Work – Real Websites We've Built for Creators Like You</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/image1_246afd4b-de59-4e78-bfba-1def0f59767b.png?v=1695598764" alt="Premium Online Course Sales Page Example">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://digitalplrhub.com/cdn/shop/files/plr-sales-page-template-for-digital-creators.png?v=1747212210&width=1946" alt="High-Converting Digital Product Sales Page">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://htmlburger.com/blog/wp-content/uploads/2022/07/Excellent-Examples-of-Product-Landing-Pages-that-Convert.jpg" alt="Stunning Product Landing Page Design">
+            </div>
+            <div class="portfolio-item">
+                <img src="http://getshogun.com/learn/wp-content/uploads/2022/08/62c33cd2af3c682c6db514bd_z8iuKXKJZuPm8sgJdxLexH6oXdxl-sf7BC1u9T-uw6d3VbN9l4_70e7179xBQsbrqjDp5TwSgrh5XtXCqV2JuFHrZV91dnFGtI9SfifoWgfRnV8sMz7YBHy8ycupxw-4qMheIRb3-D4DdP_wdzU.jpg" alt="Modern Digital Product Website Mockup">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://mydesigns.io/blog/wp-content/uploads/2025/05/Designing-High-Converting-Digital-Product-Mockups.jpg" alt="Elegant Ebook & Course Website Example">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://cdn.prod.website-files.com/5e1331324b55b0fe5f41fe63/62714977dc8f7a9d24f41403_Best%20Platforms%20To%20Sell%20Digital%20Products-min.png" alt="Professional Digital Product Sales Design">
+            </div>
+        </div>
+
+        <a href="https://wa.me/1234567890?text=Hi!%20I%20loved%20your%20portfolio.%20I%20want%20a%20similar%20website%20for%20my%20digital%20product" class="cta-btn" style="margin-top: 60px; display: inline-block;">Yes, I Want a Website Like These!</a>
+    </section>
     <!-- Testimonials Section -->
     <section id="testimonials">
         <h2>What Clients Are Saying</h2>
@@ -328,7 +372,6 @@
             </div>
         </div>
     </section>
-
     <!-- Lead Capture Section -->
     <section id="leads">
         <h2>Ready to Get Started?</h2>
@@ -343,11 +386,9 @@
         <p style="margin-top: 40px; font-size: 1.3em;">Or</p>
         <a href="https://wa.me/1234567890?text=Hi!%20I%20need%20a%20professional%20website%20for%20my%20digital%20product" class="cta-btn">Instant Chat on WhatsApp</a>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Premium Digital Product Design Services | Made with ❤️ for Creators</p>
     </footer>
-
 </body>
 </html>
