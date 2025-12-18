@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Digital Product Website Design</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-79NVB8XF6C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-79NVB8XF6C');
-</script>
-<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-n8BuiyLI5ZFKwFLUa0mjP.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79NVB8XF6C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-79NVB8XF6C');
+    </script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-n8BuiyLI5ZFKwFLUa0mjP.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
@@ -34,6 +34,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #f9f9f9;
+            overflow-x: hidden;
         }
         /* Fixed Top Bar for Call & WhatsApp */
         .top-bar {
@@ -41,44 +42,56 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
-            padding: 12px 15px;
+            padding: 15px 20px;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
             z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
         .top-bar a {
             color: white;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.05em;
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 15px;
+            gap: 10px;
+            padding: 12px 25px;
             border-radius: 50px;
-            transition: all 0.3s;
+            transition: all 0.4s;
+            letter-spacing: 0.5px;
         }
         .top-bar a:hover {
-            background: rgba(255,255,255,0.2);
             transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         .top-bar i {
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
         .call-btn {
-            background: #e74c3c;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            border: 2px solid rgba(255,255,255,0.1);
         }
         .whatsapp-btn {
-            background: #25D366;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border: 2px solid rgba(255,255,255,0.1);
         }
-        /* Hero Section */
+        .call-btn:hover {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+        }
+        .whatsapp-btn:hover {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+        }
+        /* Enhanced Hero Section */
         header {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/luxury-background-blue-green-modern-design-abstract-gradients-style_343694-2483.jpg') no-repeat center center/cover;
+            background: 
+                linear-gradient(135deg, rgba(0, 10, 20, 0.85) 0%, rgba(0, 40, 60, 0.7) 100%),
+                url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             min-height: 100vh;
             color: white;
             text-align: center;
@@ -87,37 +100,167 @@
             justify-content: center;
             align-items: center;
             padding: 0 20px;
-            margin-top: 60px;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(37, 211, 102, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(52, 152, 219, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            animation: fadeInUp 1s ease-out;
         }
         header h1 {
-            font-size: 4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 4px 4px 20px rgba(0,0,0,0.6);
-            letter-spacing: 1px;
+            font-size: 4.5em;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            background: linear-gradient(to right, #fff, #e0f7fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
         }
-        header p {
-            font-size: 1.6em;
+        header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(to right, #25D366, #3498db);
+            border-radius: 2px;
+        }
+        .tagline {
+            font-size: 1.8em;
             max-width: 900px;
-            margin-bottom: 50px;
+            margin: 40px auto 50px auto;
             font-weight: 400;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            color: #e6f7ff;
+            line-height: 1.5;
+            padding: 0 20px;
+        }
+        .highlight {
+            color: #25D366;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #25D366;
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        header:hover .highlight::after {
+            transform: scaleX(1);
+            transform-origin: left;
         }
         .cta-btn {
-            background: linear-gradient(to right, #25D366, #128C7E);
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
             color: white;
-            padding: 18px 50px;
+            padding: 20px 55px;
             text-decoration: none;
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: 700;
             border-radius: 50px;
             transition: all 0.4s ease;
-            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            letter-spacing: 0.5px;
+        }
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            z-index: -1;
+            transition: opacity 0.4s ease;
+            opacity: 0;
         }
         .cta-btn:hover {
-            background: linear-gradient(to right, #128C7E, #25D366);
-            transform: scale(1.1);
-            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.6);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(37, 211, 102, 0.5);
+        }
+        .cta-btn:hover::before {
+            opacity: 1;
+        }
+        .cta-btn i {
+            font-size: 1.4em;
+            transition: transform 0.3s ease;
+        }
+        .cta-btn:hover i {
+            transform: translateX(5px);
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.7);
+            font-size: 1.2em;
+            animation: bounce 2s infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .scroll-indicator i {
+            font-size: 1.8em;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
         }
         /* Sections */
         section {
@@ -292,34 +435,111 @@
             font-size: 1.2em;
         }
         /* Enhanced Responsive */
+        @media (max-width: 1200px) {
+            header h1 { font-size: 4em; }
+            .tagline { font-size: 1.7em; }
+        }
         @media (max-width: 1024px) {
             header h1 { font-size: 3.5em; }
-            header p { font-size: 1.5em; }
+            .tagline { font-size: 1.6em; }
             h2 { font-size: 2.8em; }
         }
         @media (max-width: 768px) {
-            .top-bar { padding: 10px; gap: 10px; }
-            .top-bar a { font-size: 0.9em; padding: 8px 12px; }
-            header { margin-top: 70px; min-height: 80vh; }
-            header h1 { font-size: 2.8em; }
-            header p { font-size: 1.3em; margin-bottom: 40px; }
-            .cta-btn { padding: 16px 40px; font-size: 1.3em; }
+            .top-bar { 
+                padding: 12px 15px; 
+                gap: 15px; 
+                justify-content: center;
+            }
+            .top-bar a { 
+                font-size: 0.95em; 
+                padding: 10px 20px; 
+            }
+            header { 
+                margin-top: 85px; 
+                min-height: 85vh; 
+                padding: 0 15px;
+            }
+            header h1 { 
+                font-size: 2.8em; 
+                line-height: 1.2;
+            }
+            .tagline { 
+                font-size: 1.4em; 
+                margin: 30px auto 40px auto;
+                padding: 0 10px;
+            }
+            .cta-btn { 
+                padding: 18px 45px; 
+                font-size: 1.3em; 
+            }
             h2 { font-size: 2.5em; }
-            .special-offer { flex-direction: column; text-align: center; padding: 25px; }
+            .special-offer { 
+                flex-direction: column; 
+                text-align: center; 
+                padding: 25px 20px;
+                margin: 40px 15px;
+            }
             .special-offer i { font-size: 3.5em; }
             .special-offer-text h3 { font-size: 1.8em; }
             .portfolio-subtitle { font-size: 1.5em; }
             .testimonial-img { width: 90px; height: 90px; }
             section { padding: 60px 15px; }
+            .scroll-indicator {
+                font-size: 1em;
+                bottom: 20px;
+            }
         }
-        @media (max-width: 480px) {
-            header h1 { font-size: 2.4em; }
-            header p { font-size: 1.2em; }
-            .cta-btn { padding: 14px 35px; font-size: 1.2em; }
-            h2 { font-size: 2.2em; }
+        @media (max-width: 576px) {
+            .top-bar { 
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .top-bar a { 
+                width: 90%;
+                justify-content: center;
+            }
+            header { 
+                margin-top: 120px; 
+                min-height: 80vh;
+            }
+            header h1 { 
+                font-size: 2.3em; 
+                letter-spacing: -0.3px;
+            }
+            header h1::after {
+                width: 100px;
+                bottom: -10px;
+            }
+            .tagline { 
+                font-size: 1.2em; 
+                margin: 25px auto 35px auto;
+            }
+            .cta-btn { 
+                padding: 16px 35px; 
+                font-size: 1.2em;
+                flex-direction: column;
+                gap: 10px;
+            }
+            h2 { 
+                font-size: 2.2em; 
+                margin-bottom: 40px;
+            }
             .feature i { font-size: 3.5em; }
             .feature h3 { font-size: 1.6em; }
-            .top-bar { justify-content: center; flex-direction: column; }
+            .scroll-indicator {
+                font-size: 0.9em;
+                bottom: 15px;
+            }
+        }
+        @media (max-width: 400px) {
+            header h1 { font-size: 2em; }
+            .tagline { font-size: 1.1em; }
+            .cta-btn { padding: 14px 30px; font-size: 1.1em; }
+            h2 { font-size: 2em; }
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -333,12 +553,26 @@
             <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
     </div>
-    <!-- Hero Section -->
+    
+    <!-- Enhanced Hero Section -->
     <header>
-        <h1>Premium Digital Product Website Design</h1>
-        <p>High-converting, beautiful websites for your online courses, e-books, software & digital products. Get more leads & sales!</p>
-        <a href="https://wa.me/+918979401469?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="cta-btn">Start Chat on WhatsApp</a>
+        <div class="header-content">
+            <h1>Premium Digital Product Website Design</h1>
+            <p class="tagline">
+                High-converting, beautiful websites for your <span class="highlight">online courses</span>, 
+                <span class="highlight">e-books</span>, <span class="highlight">software</span> & 
+                <span class="highlight">digital products</span>. Get more leads & boost your sales!
+            </p>
+            <a href="https://wa.me/+918979401469?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="cta-btn">
+                <i class="fab fa-whatsapp"></i> Start Chat on WhatsApp
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Discover More</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </header>
+    
     <!-- Why Choose Us Section -->
     <section id="features">
         <h2>Why Choose Us?</h2>
@@ -391,6 +625,7 @@
         </div>
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20loved%20your%20portfolio%20and%20the%20free%20hosting%20offer.%20Let's%20build%20my%20website!" class="cta-btn" style="margin-top: 50px; display: inline-block;">Yes, I Want My Website Now!</a>
     </section>
+    
     <!-- Testimonials Section -->
     <section id="testimonials">
         <h2>What Clients Are Saying</h2>
@@ -481,6 +716,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Lead Capture Section (Form Removed) -->
     <section id="leads">
         <h2>Ready to Get Started?</h2>
@@ -488,6 +724,7 @@
         <p style="margin-top: 40px; font-size: 1.3em;">Or</p>
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20need%20a%20professional%20website%20for%20my%20digital%20product" class="cta-btn">Instant Chat on WhatsApp</a>
     </section>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Premium Digital Product Design Services | Made with ❤️ for Creators</p>
