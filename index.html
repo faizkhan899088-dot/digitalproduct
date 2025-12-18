@@ -10,7 +10,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-79NVB8XF6C');
 </script>
 <!-- Privacy-friendly analytics by Plausible -->
@@ -23,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style> 
+    <style>
         /* Reset and Base */
         * {
             margin: 0;
@@ -44,22 +43,23 @@
             width: 100%;
             background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(10px);
-            padding: 15px 20px;
+            padding: 12px 15px;
             display: flex;
-            justify-content: flex-end;
-            gap: 20px;
+            justify-content: center;
+            gap: 15px;
             z-index: 1000;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            flex-wrap: wrap;
         }
         .top-bar a {
             color: white;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 10px 20px;
+            gap: 8px;
+            padding: 8px 15px;
             border-radius: 50px;
             transition: all 0.3s;
         }
@@ -68,7 +68,7 @@
             transform: translateY(-3px);
         }
         .top-bar i {
-            font-size: 1.4em;
+            font-size: 1.2em;
         }
         .call-btn {
             background: #e74c3c;
@@ -79,7 +79,7 @@
         /* Hero Section */
         header {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/luxury-background-blue-green-modern-design-abstract-gradients-style_343694-2483.jpg') no-repeat center center/cover;
-            height: 100vh;
+            min-height: 100vh;
             color: white;
             text-align: center;
             display: flex;
@@ -87,57 +87,57 @@
             justify-content: center;
             align-items: center;
             padding: 0 20px;
-            margin-top: 70px;
+            margin-top: 60px;
         }
         header h1 {
-            font-size: 5em;
+            font-size: 4em;
             font-weight: 700;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             text-shadow: 4px 4px 20px rgba(0,0,0,0.6);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
         header p {
-            font-size: 2em;
-            max-width: 1000px;
-            margin-bottom: 60px;
+            font-size: 1.6em;
+            max-width: 900px;
+            margin-bottom: 50px;
             font-weight: 400;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
         .cta-btn {
             background: linear-gradient(to right, #25D366, #128C7E);
             color: white;
-            padding: 22px 60px;
+            padding: 18px 50px;
             text-decoration: none;
-            font-size: 1.6em;
+            font-size: 1.4em;
             font-weight: 700;
             border-radius: 50px;
             transition: all 0.4s ease;
-            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
         }
         .cta-btn:hover {
             background: linear-gradient(to right, #128C7E, #25D366);
-            transform: scale(1.15);
-            box-shadow: 0 25px 50px rgba(37, 211, 102, 0.6);
+            transform: scale(1.1);
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.6);
         }
         /* Sections */
         section {
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         h2 {
-            font-size: 3.5em;
-            margin-bottom: 60px;
+            font-size: 3em;
+            margin-bottom: 50px;
             color: #222;
             position: relative;
             font-weight: 700;
         }
         h2::after {
             content: '';
-            width: 120px;
-            height: 6px;
+            width: 100px;
+            height: 5px;
             background: linear-gradient(to right, #25D366, #128C7E);
             display: block;
-            margin: 20px auto;
+            margin: 15px auto;
             border-radius: 3px;
         }
         /* Why Choose Us Section */
@@ -146,80 +146,80 @@
         }
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
             max-width: 1200px;
-            margin: 0 auto 80px auto;
+            margin: 0 auto 60px auto;
         }
         .feature {
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: all 0.4s;
         }
         .feature:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
         .feature i {
-            font-size: 4.5em;
+            font-size: 4em;
             color: #25D366;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         .feature h3 {
-            font-size: 2.2em;
-            margin-bottom: 20px;
+            font-size: 1.8em;
+            margin-bottom: 15px;
             font-weight: 600;
         }
         /* Special Offer Badge */
         .special-offer {
             background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
-            padding: 40px;
-            border-radius: 20px;
+            padding: 30px;
+            border-radius: 15px;
             max-width: 800px;
-            margin: 60px auto;
-            box-shadow: 0 20px 50px rgba(37, 211, 102, 0.4);
+            margin: 50px auto;
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
             flex-wrap: wrap;
         }
         .special-offer i {
-            font-size: 5em;
+            font-size: 4em;
             color: #fff;
         }
         .special-offer-text h3 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 10px;
         }
         .special-offer-text p {
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         /* Portfolio Gallery */
         .portfolio-subtitle {
-            font-size: 2em;
+            font-size: 1.8em;
             margin-bottom: 40px;
             color: #444;
         }
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             max-width: 1400px;
             margin: 0 auto;
         }
         .portfolio-item {
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             transition: all 0.4s;
         }
         .portfolio-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
         .portfolio-item img {
             width: 100%;
@@ -239,15 +239,15 @@
         }
         .testimonial-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
             max-width: 1400px;
             margin: 0 auto;
         }
         .testimonial {
             background: rgba(255,255,255,0.15);
-            padding: 40px;
-            border-radius: 20px;
+            padding: 30px;
+            border-radius: 15px;
             backdrop-filter: blur(12px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             display: flex;
@@ -256,12 +256,12 @@
             text-align: center;
         }
         .testimonial-img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
             margin-bottom: 20px;
-            border: 5px solid #25D366;
+            border: 4px solid #25D366;
         }
         .testimonial-img img {
             width: 100%;
@@ -279,87 +279,47 @@
             color: #25D366;
             font-size: 1.2em;
         }
-        /* Lead Form */
+        /* Lead Capture Section */
         #leads {
             background-color: #f0f8ff;
-        }
-        form {
-            max-width: 700px;
-            margin: 0 auto;
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-        input, textarea {
-            width: 100%;
-            padding: 18px;
-            margin: 15px 0;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 1.1em;
-            transition: border 0.3s;
-        }
-        input:focus, textarea:focus {
-            border-color: #25D366;
-            outline: none;
-        }
-        button {
-            background: linear-gradient(to right, #25D366, #128C7E);
-            color: white;
-            padding: 20px;
-            border: none;
-            width: 100%;
-            font-size: 1.6em;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.4s;
-            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.5);
-        }
-        button:hover {
-            transform: scale(1.08);
         }
         /* Footer */
         footer {
             background: #111;
             color: white;
-            padding: 50px 20px;
-            text-align: center; /* Center the text */
-            font-size: 1.3em;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1.2em;
         }
-        /* Responsive */
+        /* Enhanced Responsive */
+        @media (max-width: 1024px) {
+            header h1 { font-size: 3.5em; }
+            header p { font-size: 1.5em; }
+            h2 { font-size: 2.8em; }
+        }
         @media (max-width: 768px) {
-            .top-bar a {
-                font-size: 0.9em;
-                padding: 8px 15px;
-            }
-            header h1 {
-                font-size: 3.5em;
-            }
-            header p {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 2.8em;
-            }
-            .special-offer {
-                flex-direction: column;
-                text-align: center;
-            }
-            .special-offer i {
-                font-size: 4em;
-            }
-            .special-offer-text h3 {
-                font-size: 2em;
-            }
-            .portfolio-subtitle {
-                font-size: 1.6em;
-            }
-            .testimonial-img {
-                width: 100px;
-                height: 100px;
-            }
+            .top-bar { padding: 10px; gap: 10px; }
+            .top-bar a { font-size: 0.9em; padding: 8px 12px; }
+            header { margin-top: 70px; min-height: 80vh; }
+            header h1 { font-size: 2.8em; }
+            header p { font-size: 1.3em; margin-bottom: 40px; }
+            .cta-btn { padding: 16px 40px; font-size: 1.3em; }
+            h2 { font-size: 2.5em; }
+            .special-offer { flex-direction: column; text-align: center; padding: 25px; }
+            .special-offer i { font-size: 3.5em; }
+            .special-offer-text h3 { font-size: 1.8em; }
+            .portfolio-subtitle { font-size: 1.5em; }
+            .testimonial-img { width: 90px; height: 90px; }
+            section { padding: 60px 15px; }
+        }
+        @media (max-width: 480px) {
+            header h1 { font-size: 2.4em; }
+            header p { font-size: 1.2em; }
+            .cta-btn { padding: 14px 35px; font-size: 1.2em; }
+            h2 { font-size: 2.2em; }
+            .feature i { font-size: 3.5em; }
+            .feature h3 { font-size: 1.6em; }
+            .top-bar { justify-content: center; flex-direction: column; }
         }
     </style>
 </head>
@@ -429,7 +389,7 @@
                 <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/paul_zizka_screenshot.png?v=1760474198" alt="Real Creator Sales Page Example">
             </div>
         </div>
-        <a href="https://wa.me/+918979401469?text=Hi!%20I%20loved%20your%20portfolio%20and%20the%20free%20hosting%20offer.%20Let's%20build%20my%20website!" class="cta-btn" style="margin-top: 60px; display: inline-block;">Yes, I Want My Website Now!</a>
+        <a href="https://wa.me/+918979401469?text=Hi!%20I%20loved%20your%20portfolio%20and%20the%20free%20hosting%20offer.%20Let's%20build%20my%20website!" class="cta-btn" style="margin-top: 50px; display: inline-block;">Yes, I Want My Website Now!</a>
     </section>
     <!-- Testimonials Section -->
     <section id="testimonials">
@@ -521,17 +481,10 @@
             </div>
         </div>
     </section>
-    <!-- Lead Capture Section -->
+    <!-- Lead Capture Section (Form Removed) -->
     <section id="leads">
         <h2>Ready to Get Started?</h2>
-        <p>Fill the form for a free consultation or chat directly on WhatsApp.</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Full Name" required>
-            <input type="email" name="email" placeholder="Your Email Address" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number">
-            <textarea name="message" placeholder="Describe your digital product & requirements" rows="6" required></textarea>
-            <button type="submit">Get Free Quote</button>
-        </form>
+        <p>Chat directly on WhatsApp for a free consultation.</p>
         <p style="margin-top: 40px; font-size: 1.3em;">Or</p>
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20need%20a%20professional%20website%20for%20my%20digital%20product" class="cta-btn">Instant Chat on WhatsApp</a>
     </section>
