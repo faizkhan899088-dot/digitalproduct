@@ -89,7 +89,7 @@
         }
         /* Enhanced Hero Section */
         header {
-            background: 
+            background:
                 linear-gradient(135deg, rgba(0, 10, 20, 0.85) 0%, rgba(0, 40, 60, 0.7) 100%),
                 url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             min-height: 100vh;
@@ -111,7 +111,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 radial-gradient(circle at 20% 50%, rgba(37, 211, 102, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(52, 152, 219, 0.1) 0%, transparent 50%);
             z-index: 0;
@@ -315,7 +315,7 @@
             margin-bottom: 15px;
             font-weight: 600;
         }
-        /* Special Offer Badge */
+        /* Special Offer Badge - Now Green */
         .special-offer {
             background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
@@ -327,7 +327,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
         }
         .special-offer i {
@@ -340,6 +340,25 @@
         }
         .special-offer-text p {
             font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        .special-offer-btn {
+            background: white;
+            color: #128C7E;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .special-offer-btn:hover {
+            transform: translateY(-3px);
+            background: #f0f0f0;
         }
         /* Portfolio Gallery */
         .portfolio-subtitle {
@@ -445,37 +464,37 @@
             h2 { font-size: 2.8em; }
         }
         @media (max-width: 768px) {
-            .top-bar { 
-                padding: 12px 15px; 
-                gap: 15px; 
+            .top-bar {
+                padding: 12px 15px;
+                gap: 15px;
                 justify-content: center;
             }
-            .top-bar a { 
-                font-size: 0.95em; 
-                padding: 10px 20px; 
+            .top-bar a {
+                font-size: 0.95em;
+                padding: 10px 20px;
             }
-            header { 
-                margin-top: 85px; 
-                min-height: 85vh; 
+            header {
+                margin-top: 85px;
+                min-height: 85vh;
                 padding: 0 15px;
             }
-            header h1 { 
-                font-size: 2.8em; 
+            header h1 {
+                font-size: 2.8em;
                 line-height: 1.2;
             }
-            .tagline { 
-                font-size: 1.4em; 
+            .tagline {
+                font-size: 1.4em;
                 margin: 30px auto 40px auto;
                 padding: 0 10px;
             }
-            .cta-btn { 
-                padding: 18px 45px; 
-                font-size: 1.3em; 
+            .cta-btn {
+                padding: 18px 45px;
+                font-size: 1.3em;
             }
             h2 { font-size: 2.5em; }
-            .special-offer { 
-                flex-direction: column; 
-                text-align: center; 
+            .special-offer {
+                flex-direction: column;
+                text-align: center;
                 padding: 25px 20px;
                 margin: 40px 15px;
             }
@@ -490,39 +509,39 @@
             }
         }
         @media (max-width: 576px) {
-            .top-bar { 
+            .top-bar {
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
             }
-            .top-bar a { 
+            .top-bar a {
                 width: 90%;
                 justify-content: center;
             }
-            header { 
-                margin-top: 120px; 
+            header {
+                margin-top: 120px;
                 min-height: 80vh;
             }
-            header h1 { 
-                font-size: 2.3em; 
+            header h1 {
+                font-size: 2.3em;
                 letter-spacing: -0.3px;
             }
             header h1::after {
                 width: 100px;
                 bottom: -10px;
             }
-            .tagline { 
-                font-size: 1.2em; 
+            .tagline {
+                font-size: 1.2em;
                 margin: 25px auto 35px auto;
             }
-            .cta-btn { 
-                padding: 16px 35px; 
+            .cta-btn {
+                padding: 16px 35px;
                 font-size: 1.2em;
                 flex-direction: column;
                 gap: 10px;
             }
-            h2 { 
-                font-size: 2.2em; 
+            h2 {
+                font-size: 2.2em;
                 margin-bottom: 40px;
             }
             .feature i { font-size: 3.5em; }
@@ -553,14 +572,14 @@
             <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
     </div>
-    
+  
     <!-- Enhanced Hero Section -->
     <header>
         <div class="header-content">
             <h1>Premium Digital Product Website Design</h1>
             <p class="tagline">
-                High-converting, beautiful websites for your <span class="highlight">online courses</span>, 
-                <span class="highlight">e-books</span>, <span class="highlight">software</span> & 
+                High-converting, beautiful websites for your <span class="highlight">online courses</span>,
+                <span class="highlight">e-books</span>, <span class="highlight">software</span> &
                 <span class="highlight">digital products</span>. Get more leads & boost your sales!
             </p>
             <a href="https://wa.me/+918979401469?text=Hi!%20I%20want%20a%20stunning%20website%20for%20my%20digital%20product" class="cta-btn">
@@ -572,7 +591,7 @@
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
-    
+  
     <!-- Why Choose Us Section -->
     <section id="features">
         <h2>Why Choose Us?</h2>
@@ -593,12 +612,15 @@
                 <p>Proven CTAs, WhatsApp chat, email opt-ins & high-converting layouts that turn visitors into buyers.</p>
             </div>
         </div>
-        <!-- Special Offer: 1 Year Free Domain + Hosting -->
+        <!-- Special Offer: 1 Year Free Domain + Hosting - Now Green with WhatsApp Button -->
         <div class="special-offer">
             <i class="fas fa-gift"></i>
             <div class="special-offer-text">
                 <h3>Limited Time Offer!</h3>
                 <p><strong>1 Year FREE Domain + Hosting</strong><br>With Every Premium Website Package</p>
+                <a href="https://wa.me/+918979401469?text=Hi!%20I%20want%20to%20claim%20the%20Limited%20Time%20Offer%20with%201%20Year%20Free%20Domain%20%2B%20Hosting!" class="special-offer-btn">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i> Claim Offer on WhatsApp
+                </a>
             </div>
         </div>
         <!-- Portfolio Gallery -->
@@ -625,7 +647,7 @@
         </div>
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20loved%20your%20portfolio%20and%20the%20free%20hosting%20offer.%20Let's%20build%20my%20website!" class="cta-btn" style="margin-top: 50px; display: inline-block;">Yes, I Want My Website Now!</a>
     </section>
-    
+  
     <!-- Testimonials Section -->
     <section id="testimonials">
         <h2>What Clients Are Saying</h2>
@@ -716,7 +738,7 @@
             </div>
         </div>
     </section>
-    
+  
     <!-- Lead Capture Section (Form Removed) -->
     <section id="leads">
         <h2>Ready to Get Started?</h2>
@@ -724,7 +746,7 @@
         <p style="margin-top: 40px; font-size: 1.3em;">Or</p>
         <a href="https://wa.me/+918979401469?text=Hi!%20I%20need%20a%20professional%20website%20for%20my%20digital%20product" class="cta-btn">Instant Chat on WhatsApp</a>
     </section>
-    
+  
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Premium Digital Product Design Services | Made with ❤️ for Creators</p>
